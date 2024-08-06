@@ -1,0 +1,213 @@
+.testimonials-container {
+  position: relative;
+  height: 600px; /* Adjust this as needed */
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonials-column {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.gradient-overlay {
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
+  pointer-events: none;
+}
+
+.gradient-overlay.bottom {
+  top: auto;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+}
+
+
+
+
+ {/* <!-- Duplicated images for continuous effect --> */}
+ <li className="image-item">
+ <img
+   className="image"
+   alt=""
+   src="https://framerusercontent.com/images/ZKRq1z235oPmkciGkoimdiqigTg.svg"
+ />
+</li>
+<li className="image-item">
+ <img
+   className="image"
+   alt=""
+   src="https://framerusercontent.com/images/ctz7jfVgOlhPnJtoWX5OM4xFo8.png?scale-down-to=1024"
+ />
+</li>
+<li className="image-item">
+ <img
+   className="image"
+   alt=""
+   src="https://framerusercontent.com/images/itv6f8fuUGhsXcn88TAbhBfy0w.png"
+ />
+</li>
+<li className="image-item">
+ <img
+   className="image"
+   alt=""
+   src="https://framerusercontent.com/images/93vyEbNvGwW6tAXvemSFT7k.png"
+ />
+</li>
+<li className="image-item">
+ <img
+   className="image"
+   alt=""
+   src="https://framerusercontent.com/images/FFS2rnhpRLrDFcrnoLfon5fM2yc.webp?scale-down-to=512"
+ />
+</li>
+{/* <!-- Duplicated images for continuous effect --> */}
+<li className="image-item">
+ <img
+   className="image"
+   alt=""
+   src="https://framerusercontent.com/images/ZKRq1z235oPmkciGkoimdiqigTg.svg"
+ />
+</li>
+<li className="image-item">
+ <img
+   className="image"
+   alt=""
+   src="https://framerusercontent.com/images/ctz7jfVgOlhPnJtoWX5OM4xFo8.png?scale-down-to=1024"
+ />
+</li>
+<li className="image-item">
+ <img
+   className="image"
+   alt=""
+   src="https://framerusercontent.com/images/itv6f8fuUGhsXcn88TAbhBfy0w.png"
+ />
+</li>
+<li className="image-item">
+ <img
+   className="image"
+   alt=""
+   src="https://framerusercontent.com/images/93vyEbNvGwW6tAXvemSFT7k.png"
+ />
+</li>
+<li className="image-item">
+ <img
+   className="image"
+   alt=""
+   src="https://framerusercontent.com/images/FFS2rnhpRLrDFcrnoLfon5fM2yc.webp?scale-down-to=512"
+ />
+</li>
+
+{/* <!-- Duplicated images for continuous effect --> */}
+<li className="image-item">
+ <img
+   className="image"
+   alt=""
+   src="https://framerusercontent.com/images/ZKRq1z235oPmkciGkoimdiqigTg.svg"
+ />
+</li>
+<li className="image-item">
+ <img
+   className="image"
+   alt=""
+   src="https://framerusercontent.com/images/ctz7jfVgOlhPnJtoWX5OM4xFo8.png?scale-down-to=1024"
+ />
+</li>
+<li className="image-item">
+ <img
+   className="image"
+   alt=""
+   src="https://framerusercontent.com/images/itv6f8fuUGhsXcn88TAbhBfy0w.png"
+ />
+</li>
+<li className="image-item">
+ <img
+   className="image"
+   alt=""
+   src="https://framerusercontent.com/images/93vyEbNvGwW6tAXvemSFT7k.png"
+ />
+</li>
+<li className="image-item">
+ <img
+   className="image"
+   alt=""
+   src="https://framerusercontent.com/images/FFS2rnhpRLrDFcrnoLfon5fM2yc.webp?scale-down-to=512"
+ />
+</li>
+
+{/* <!-- Duplicated images for continuous effect --> */}
+<li className="image-item">
+ <img
+   className="image"
+   alt=""
+   src="https://framerusercontent.com/images/ZKRq1z235oPmkciGkoimdiqigTg.svg"
+ />
+</li>
+<li className="image-item">
+ <img
+   className="image"
+   alt=""
+   src="https://framerusercontent.com/images/ctz7jfVgOlhPnJtoWX5OM4xFo8.png?scale-down-to=1024"
+ />
+</li>
+<li className="image-item">
+ <img
+   className="image"
+   alt=""
+   src="https://framerusercontent.com/images/itv6f8fuUGhsXcn88TAbhBfy0w.png"
+ />
+</li>
+<li className="image-item">
+ <img
+   className="image"
+   alt=""
+   src="https://framerusercontent.com/images/93vyEbNvGwW6tAXvemSFT7k.png"
+ />
+</li>
+<li className="image-item">
+ <img
+   className="image"
+   alt=""
+   src="https://framerusercontent.com/images/FFS2rnhpRLrDFcrnoLfon5fM2yc.webp?scale-down-to=512"
+ />
+</li>
+
+{/* <!-- Duplicated images for continuous effect --> */}
+<li className="image-item">
+ <img
+   className="image"
+   alt=""
+   src="https://framerusercontent.com/images/ZKRq1z235oPmkciGkoimdiqigTg.svg"
+ />
+</li>
+<li className="image-item">
+ <img
+   className="image"
+   alt=""
+   src="https://framerusercontent.com/images/ctz7jfVgOlhPnJtoWX5OM4xFo8.png?scale-down-to=1024"
+ />
+</li>
+<li className="image-item">
+ <img
+   className="image"
+   alt=""
+   src="https://framerusercontent.com/images/itv6f8fuUGhsXcn88TAbhBfy0w.png"
+ />
+</li>
+<li className="image-item">
+ <img
+   className="image"
+   alt=""
+   src="https://framerusercontent.com/images/93vyEbNvGwW6tAXvemSFT7k.png"
+ />
+</li>
+<li className="image-item">
+ <img
+   className="image"
+   alt=""
+   src="https://framerusercontent.com/images/FFS2rnhpRLrDFcrnoLfon5fM2yc.webp?scale-down-to=512"
+ />
+</li>

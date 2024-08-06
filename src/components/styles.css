@@ -1,0 +1,159 @@
+/* styles.css */
+:root {
+  --surfaceAccent: #2c3233;
+  --onBackground: #0e1517;
+  --textPrimary: #e2ebed;
+}
+
+body {
+  @apply bg-background text-textPrimary;
+}
+
+.header-blur {
+  backdrop-filter: blur(70px); /* Adjust blur intensity as needed */
+  background: transparent;
+}
+
+.button {
+  background: var(--surfaceAccent);
+  border: 1px solid var(--surfaceAccent);
+}
+
+.button:hover {
+  background: var(--onBackground);
+  border: 1px solid var(--surfaceAccent);
+}
+
+/* trusted partners images */
+
+.image-scroll-container {
+  display: flex;
+  overflow: hidden;
+}
+
+.image-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  animation: 12s scrollImages infinite linear;
+}
+
+.image-item {
+  width: 118px;
+  height: 32px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@keyframes scrollImages {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.horizontal-scroll-container {
+  display: flex;
+  gap: 16px;
+  overflow: hidden;
+}
+
+.horizontal-scroll {
+  display: flex;
+  gap: 20px; /* Adjust gap if needed */
+  justify-content: center;
+  align-items: center;
+  animation: scrollReviews 50s linear infinite;
+}
+
+.scroll-item {
+  /* width: 385px;   */
+  max-width: 500px;
+  border: 1px solid var(--surfaceAccent); /* Example border color */
+  border-radius: 1rem; /* Example border radius */
+  padding: 20px; /* Example padding */
+  background-color: var(--onBackground); /* Example background color */
+}
+
+/* Add this to your CSS file */
+.center-column,
+.left-column,
+.right-column {
+  /* transition: transform 0.2s ease-in; */
+  scroll-behavior: smooth;
+}
+
+/* Keyframes for continuous scrolling */
+@keyframes scrollReviews {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.text-scroll-container:hover {
+  border-radius: 1rem;
+}
+
+.scroll-text-wrapper {
+  display: flex;
+  animation: scroll-left 20s linear infinite;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.btn {
+  position: relative;
+  display: inline-flex;
+  background: #c10104;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  overflow: hidden;
+  border: 1px solid #c10104;
+}
+
+.btn:hover {
+  border: 1px solid var(--surfaceAccent);
+  background: var(--onBackground);
+}
+
+/* .btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: var(--onBackground);
+  transition: width 0.5s height 0.5s;
+}
+
+.btn:hover::before {
+  width: 300px;
+  height: 300px;
+} */
