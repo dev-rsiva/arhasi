@@ -6,9 +6,9 @@ const BlogpostCards = () => {
     {
       authorName: "Chiru Bhavansikar",
       role: "Founder & CEO",
-      about: "Read Arhasi Inc. Story",
+      about: "Watch the Video",
       blogTitle: "Turnkey Responsible AI on Control Plane Cloud",
-      companyInfo: "Arhasi. Inc ",
+      companyInfo: "Arhasi Inc.",
       companyName: "Arhasi",
       // video:
       //   "https://framerusercontent.com/assets/4YHelhM5OiGLRGgFZpptXMCCWPM.mp4",
@@ -22,9 +22,9 @@ const BlogpostCards = () => {
     {
       authorName: "Chiru Bhavansikar",
       role: "Founder & CEO",
-      about: "Read Arhasi Inc. Story",
+      about: "Watch the Video",
       blogTitle: "Secure AI Internal Chatbots with Microsoft Teams",
-      companyInfo: "Arhasi. Inc ",
+      companyInfo: "Arhasi Inc.",
       companyName: "Arhasi",
       video:
         "https://res.cloudinary.com/dhj4gimub/video/upload/v1722963982/Secure_AI_Internal_Chatbots_with_Microsoft_Teams_zakxxt.mp4",
@@ -33,12 +33,12 @@ const BlogpostCards = () => {
       youtubeLink: "https://www.youtube.com/watch?v=IRrPcLPAIyo",
     },
     {
-      authorName: "Marie Wonder",
-      role: "Founder & CTO",
-      about: "Read Arhasi Inc. Story",
+      authorName: "Chiru Bhavansikar",
+      role: "Founder & CEO",
+      about: "Watch the Video",
       blogTitle: "Transform ITSM with an AI Integrity Assurance Chatbot",
-      companyInfo: "Arhasi. Inc ",
-      companyName: "Climbo",
+      companyInfo: "Arhasi Inc.",
+      companyName: "Arhasi",
       video:
         "https://res.cloudinary.com/dhj4gimub/video/upload/v1722966616/Transform_ITSM_with_an_AI_Chatbot_equipped_with_Integrity_Assurance_ppxc7w.mp4",
 

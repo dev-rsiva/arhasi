@@ -39,7 +39,12 @@ const BlogpostCard = ({ blogpost, index }) => {
       className="bg-onBackground border-[0.5px] border-surfaceAccent rounded-2xl overflow-hidden min-w-[32%] max-w-[500px] h-full my-4 desktop:my-12 flex flex-col justify-between"
     >
       <div
-        className="relative w-full h-full bg-white"
+        className={`relative w-auto h-[262px] ${
+          blogpost.blogTitle ===
+          "Transform ITSM with an AI Integrity Assurance Chatbot"
+            ? "py-6"
+            : ""
+        } bg-white flex justify-center items-center`}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
@@ -49,7 +54,7 @@ const BlogpostCard = ({ blogpost, index }) => {
           src={blogpost.video}
           loop
           playsInline
-          className="cursor-auto w-full min-h-[262px] rounded-none object-contain bg-transparent object-center"
+          className="cursor-auto w-auto h-full rounded-none object-fit bg-transparent object-center"
           onError={handleVideoError}
           controls // Add controls for debugging
         >

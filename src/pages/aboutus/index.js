@@ -166,9 +166,9 @@ const AboutUs = () => {
         </p>
       </div>
 
-      <div className="px-[112px]">
-        <div className="relative flex gap-6 mb-48">
-          <div className="w-[50%] h-[830px]">
+      <div className="desktop:mx-[112px] tablet:mx-[48px] mx-[24px]">
+        <div className="relative flex desktop:flex-row tablet:flex-row flex-col gap-6 mb-48">
+          <div className="desktop:w-[50%] h-[830px]">
             <img
               className="w-full h-full object-cover"
               alt=""
@@ -176,7 +176,7 @@ const AboutUs = () => {
             />
           </div>
 
-          <div className="w-[50%] h-[830px]">
+          <div className="desktop:w-[50%] h-[830px]">
             <img
               className="w-full h-full object-cover"
               alt=""
@@ -185,7 +185,7 @@ const AboutUs = () => {
           </div>
 
           <div
-            className="absolute w-[55%] bottom-0 right-0 bg-background text-textPrimary pt-4 pb-[85px] pl-6 
+            className="desktop:absolute w-[55%] bottom-0 right-0 bg-background text-textPrimary pt-4 pb-[85px] pl-6 
           "
           >
             <h1 className="text-display-3 text-textPrimary font-medium">
@@ -220,8 +220,8 @@ const AboutUs = () => {
           </div>
         </div>
 
-        <div className="flex justify-between items-end mb-24">
-          <div className="w-[45%] flex flex-col gap-4">
+        <div className="flex desktop:flex-row flex-col justify-between items-end mb-24">
+          <div className="desktop:w-[45%] flex flex-col gap-4">
             <h1 className="text-display-3 text-textPrimary font-medium">
               Since 2023
             </h1>
@@ -241,7 +241,7 @@ const AboutUs = () => {
             </p>
           </div>
 
-          <div className="w-[45%] flex flex-col gap-4">
+          <div className="desktop:w-[45%] flex flex-col gap-4">
             <p className="text-p-lg text-textSecondary">
               We had the vision for AI Playbooks, Compliance frameworks and
               technology modules to help GenAI models comply with AI regulations
@@ -357,7 +357,7 @@ const AboutUs = () => {
         </div>
 
         <div className="w-full mb-40">
-          <ul className="w-full flex justify-between gap-5">
+          <ul className="w-full flex desktop:flex-row flex-col justify-between gap-5">
             {FeaturedMediaInfo.map((eachInfo) => {
               return (
                 <Link
@@ -509,10 +509,10 @@ const AboutUs = () => {
         </div>
 
         <div>
-          <ul className="flex flex-wrap gap-5 justify-between mb-48">
+          <ul className="flex dektop:flex-row flex-col flex-wrap gap-5 justify-between mb-48">
             {teamInfo.map((eachInfo) => {
               return (
-                <li className="w-[32%] p-10 rounded-xl border border-surfaceAccent bg-onBackground flex flex-col gap-6">
+                <li className="desktop:w-[32%] p-10 rounded-xl border border-surfaceAccent bg-onBackground flex flex-col gap-6">
                   <img
                     className="max-h-[280px] w-fit mx-auto"
                     alt=""

@@ -64,7 +64,7 @@ const FeatureThree = () => {
         <img
           className="flex justify-center items-center relative z-[1]"
           alt=""
-          src="https://framerusercontent.com/images/SRdnaLKx6wmdy7YiErxGLIANwI.png"
+          src="./feature2_bg_removed.png"
         />
       </div>
     </div>
