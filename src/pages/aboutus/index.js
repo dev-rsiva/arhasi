@@ -160,7 +160,7 @@ const AboutUs = () => {
           src="https://framerusercontent.com/images/4o6XXSfCwvxcExxJ79vtQN63Rsw.jpg?scale-down-to=512"
         />
         <p className="text-textSecondary text-p-xl w-[50%] text-center absolute top-0 z-2">
-          Our name, Arhasi, means “you deserve”; as well as “pleased to give”.
+          Our name, Arhasi, means “you deserve” as well as “pleased to give”.
           Our mission is exactly that–it is our pleasure to give our customers
           all they deserve, which is the best of our AI solutions.
         </p>
@@ -208,7 +208,7 @@ const AboutUs = () => {
                   ™
                 </sup>
               </span>{" "}
-              platform (Rapid AI Productization and Integrity Defense) that
+              platform (Ready AI Provisioning and Integrity Defense) that
               effortlessly constructs, evaluates, and manages enterprise AI
               Agents infused with robust security, governance, and compliance
               features.
@@ -364,6 +364,7 @@ const AboutUs = () => {
                   to={eachInfo.url}
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="w-full"
                 >
                   <li className="flex flex-col gap-8 w-full">
                     <div className="w-full h-[242px] rounded-xl overflow-hidden">

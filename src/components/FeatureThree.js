@@ -36,7 +36,7 @@ const FeatureThree = () => {
           className="bg-onBackground rounded-2xl desktop:px-10 px-4 desktop:pt-10 desktop
         :pb-6 py-4 border border-surfaceAccent"
         >
-          <h3 className="desktop:mb-8 tablet:mb-8 mb-4 text-p-lg text-textPrimary font-semibold">
+          <h3 className="desktop:mb-6 tablet:mb-8 mb-4 text-p-lg text-textPrimary font-semibold">
             Reductions & Improvements
           </h3>
           <ul>
@@ -49,7 +49,7 @@ const FeatureThree = () => {
                   <p className="text-p-sm text-textPrimary">
                     {eachItem.itemName}
                   </p>
-                  <hr className="h-[0.25px] bg-surfaceAccent border-none desktop:my-5 my-3" />
+                  <hr className="h-[0.25px] bg-surfaceAccent border-none desktop:my-3 my-3" />
                 </li>
               );
             })}
