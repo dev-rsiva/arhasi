@@ -18,8 +18,8 @@ const FeatureOne = () => {
           <span>
             <img
               alt=""
-              src="./feature1_bg_removed.png"
               className="w-auto h-[32px] my-4 inline"
+              src="./newcopy-feature1.png"
             />{" "}
             <sup className="text-sm">™</sup>
           </span>
