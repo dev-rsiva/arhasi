@@ -18,8 +18,8 @@ const FeatureOne = () => {
           <span>
             <img
               alt=""
+              src="./Image_20240711_224454_109-removebg-preview.png"
               className="w-auto h-[32px] my-4 inline"
-              src="./newcopy-feature1.png"
             />{" "}
             <sup className="text-sm">™</sup>
           </span>
@@ -164,7 +164,7 @@ const FeatureOne = () => {
         <img
           className="flex justify-center items-center relative z-[1]"
           alt=""
-          src="https://framerusercontent.com/images/w7eFnTf9EH3zszbEQh7kTKjsWY.png"
+          src="./feature1_bg_removed.png"
         />
       </div>
     </div>

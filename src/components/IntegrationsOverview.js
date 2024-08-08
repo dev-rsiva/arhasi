@@ -55,7 +55,20 @@ const IntegrationsOverview = () => {
         <ul className="flex flex-wrap desktop:flex-row tablet:flex-row flex-col desktop:gap-5 tablet:gap-4 gap-1">
           {integrationsInfo.map((eachInfo) => {
             return (
-              <li className="desktop:w-[48%] tablet:w-[48%] flex flex-col gap-6 desktop:p-8 tablet:p-6 p-4 desktop:my-1 tablet:my-1 my-3 rounded-2xl border border-surfaceAccent bg-onBackground">
+              <li
+                // style={{ position: "relative", margin: "3px" }}
+                className="desktop:w-[48%] tablet:w-[48%] flex flex-col gap-6 desktop:p-8 tablet:p-6 p-4 desktop:my-1 tablet:my-1 my-3 rounded-2xl border border-surfaceAccent bg-onBackground"
+              >
+                {/* <div
+                  style={{
+                    position: "absolute",
+                    top: "0",
+                    bottom: "0",
+                    left: "0",
+                    right: "0",
+                    border: "2px solid red",
+                  }}
+                /> */}
                 <div className="flex justify-between">
                   <div className="flex items-center gap-3">
                     <img alt="" src={eachInfo.icon} className="w-[32px]" />

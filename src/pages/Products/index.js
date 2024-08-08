@@ -289,12 +289,12 @@ const ProductsPage = () => {
             <button className="text-textOnPrimary text-p-lg bg-primary hover:bg-onBackground border border-[#c10104] hover:border hover:border-surfaceAccent font-semibold rounded-full px-8 py-[14px] my-3">
               Get started
             </button>
-            <button
+            {/* <button
               // className="px-8 py-[14px] bg-surfaceAccent hover:bg-onBackground border border-surfaceAccent hover:border hover:border-surfaceAccent rounded-full text-p-lg text-textPrimary font-semibold"
               className="text-textPrimary  text-p-lg bg-surfaceAccent hover:bg-onBackground border border-surfaceAccent hover:border hover:border-surfaceAccent font-semibold rounded-full  px-8 py-[14px] my-3"
             >
               Learn more
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
@@ -392,7 +392,7 @@ const ProductsPage = () => {
       <div className="flex flex-col gap-24 my-52">
         <div className="flex justify-center items-center gap-24">
           <div>
-            <div className="w-auto h-[385px] rounded-3xl overflow-hidden">
+            <div className="w-[500px] h-auto rounded-3xl overflow-hidden">
               <img
                 className="w-full h-full object-fit"
                 alt=""
@@ -409,21 +409,21 @@ const ProductsPage = () => {
               Bring your own Bot, Bring your own Data, and Improve your
               Productivity with AI
             </p>
-            {/* Needed Later on */}
-            {/* <div className="flex gap-4 ">
+            Needed Later on
+            <div className="flex gap-4 ">
               <button className="text-[#FFFFFF]  text-p-sm bg-surfaceAccent hover:bg-onBackground border border-surfaceAccent hover:border hover:border-surfaceAccent font-bold rounded-lg px-4 py-2 my-3">
                 Get started
               </button>
-              <button className="text-[#333333] hover:text-[#FFFFFF] text-p-sm bg-[#EBEBEB] hover:bg-onBackground border border-[#EBEBEB] hover:border hover:border-surfaceAccent font-bold rounded-lg px-4 py-2 my-3">
+              {/* <button className="text-[#333333] hover:text-[#FFFFFF] text-p-sm bg-[#EBEBEB] hover:bg-onBackground border border-[#EBEBEB] hover:border hover:border-surfaceAccent font-bold rounded-lg px-4 py-2 my-3">
                 Learn more
-              </button>
-            </div> */}
+              </button> */}
+            </div>
           </div>
         </div>
 
         <div className="flex flex-row-reverse justify-center items-center gap-24">
           <div>
-            <div className="w-auto h-[385px] rounded-3xl overflow-hidden">
+            <div className="w-[500px] h-auto rounded-3xl overflow-hidden">
               <img
                 className="w-full h-full object-fit"
                 alt=""
@@ -454,9 +454,9 @@ const ProductsPage = () => {
         </div>
       </div>
 
-      <div className="mb-24 mt-16 w-[1120px] h-auto rounded-2xl flex gap-24 justify-center items-center bg-primary py-10">
-        <div className="w-[37%] flex justify-center items-start flex-col gap-4">
-          <h1 className="text-display-2 text-textPrimary font-bold leading-[1.2em]">
+      <div className="mb-24 mt-16 w-[1120px] h-auto rounded-2xl flex gap-24 justify-start items-center bg-primary py-10 relative">
+        <div className="px-16 py-4 w-[50%] flex justify-center items-start flex-col gap-4">
+          <h1 className="text-display-3 text-textPrimary font-bold leading-[1.2em]">
             Launch all your AI solutions in seconds
           </h1>
           <p className="text-textOnPrimary text-opacity-50 font-medium text-sm">
@@ -469,7 +469,7 @@ const ProductsPage = () => {
           </button>
 
           <div className="flex justify-center items-center gap-6">
-            {["Pro stuff", "Lit specs", "Top value"].map((each) => {
+            {["Instantly Secure", "Plug and Play", "Top Value"].map((each) => {
               return (
                 <div className="flex gap-2 justify-center items-center">
                   <div className="w-[8px] h-[8px] rounded-full bg-white" />
@@ -479,9 +479,9 @@ const ProductsPage = () => {
             })}
           </div>
         </div>
-        <div className="w-[45%] h-full overflow-hidden">
+        <div className="absolute bottom-[-50px] right-[-90px] w-[770px] h-auto overflow-hidden">
           <img
-            className="w-[600px] h-auto object-cover"
+            className="w-full h-full object-cover"
             alt=""
             src="https://framerusercontent.com/images/aXA3usDpKaxKicmqJ8N0QFULyY.png"
           />

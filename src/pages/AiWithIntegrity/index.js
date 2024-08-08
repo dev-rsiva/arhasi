@@ -20,10 +20,10 @@ const Services = () => {
     },
 
     {
-      title: (
+      title: "Security Checks with Benchmarks and AI Best Practices",
+      desc: (
         <div>
-          Security Checks with Benchmarks and AI Best Practices", desc:
-          "Provided our
+          Provided our
           <span className="px-2">
             <img
               alt=""
@@ -37,7 +37,7 @@ const Services = () => {
           framework, your AI solution & system will be supplied with a
           repertoire of benchmarks for performance and compliance, as well as
           security checks to ensure everything in your AI ecosystem is safe and
-          sound.",
+          sound.
         </div>
       ),
     },

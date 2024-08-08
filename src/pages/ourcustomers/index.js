@@ -576,6 +576,26 @@ const OurCustomers = () => {
               that would serve to help employees navigate a complex regulatory
               and logistical environment.
             </div>
+
+            <div className="mb-24">
+              <h1 className="text-md font-medium text-textPrimary">
+                Faster Time to Value with the Power of Partners
+              </h1>
+
+              <p className="text-p-md text-textSecondary my-6">
+                As a Google Startup Partner, Arhasi teamed up with Google to
+                execute an exquisite Retrieval Augmented Generation (RAG)
+                employee assistant with Gemini 1.5-Flash in VertexAI. Arhasi's
+                dedicated industry suite "R.A.P.I.D. for Nonprofits" combines
+                proprietary, foundational components of the Arhasi GenAI
+                ecosystem to create a custom solution to help nonprofits
+                seamlessly adopt GenAI and maneuver compliance and regulatory
+                requirements with proficiency and ease. As part of this suite,
+                LifeWorks' "GenAI Employee Assist" leverages Arhasi's quickstart
+                platform for Autonomous AI Agents and Bots with a tailored
+                twist.
+              </p>
+            </div>
           </div>
         </div>
 
@@ -640,7 +660,7 @@ const OurCustomers = () => {
         </div>
       </div>
 
-      <div className="mb-40">
+      {/* <div className="mb-40">
         <h1 className="text-md font-medium text-textPrimary">
           Faster Time to Value with the Power of Partners
         </h1>
@@ -657,7 +677,7 @@ const OurCustomers = () => {
           quickstart platform for Autonomous AI Agents and Bots with a tailored
           twist.
         </p>
-      </div>
+      </div> */}
 
       <div className="mb-48">
         <p className="text-md text-textPrimary font-medium mb-16">
