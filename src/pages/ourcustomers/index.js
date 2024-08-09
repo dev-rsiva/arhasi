@@ -495,7 +495,7 @@ const OurCustomers = () => {
         })}
       </ul>
 
-      <div className="w-full tablet:max-w-[500px] mobile:max-w-full small-mobile:max-w-full tablet:mx-auto mobile:mx-auto flex desktop:flex-row flex-col justify-between tablet:gap-6 mobile:gap-6 small-mobile:gap-6 items-center mb-16 pl-2">
+      <div className="w-full tablet:max-w-[500px] mobile:max-w-full small-mobile:max-w-full tablet:mx-auto mobile:mx-auto flex desktop:flex-row flex-col justify-between tablet:gap-6 mobile:gap-6 small-mobile:gap-6 items-center mb-16 desktop:pl-2 tablet:pl-2">
         <div className=" flex-1 text-display-3 mobile:text-md small-mobile:text-md font-medium text-start">
           <h1 className="text-textPrimary">Get strategic with</h1>
           <p className="text-textTertiary">the best of Arhasi</p>
@@ -528,7 +528,7 @@ const OurCustomers = () => {
         </ul>
       </div>
 
-      <div className="tablet:max-w-[500px] tablet:mx-auto w-full flex desktop:flex-row flex-col justify-between items-center mb-24 pl-2">
+      <div className="tablet:max-w-[500px] tablet:mx-auto w-full flex desktop:flex-row flex-col justify-between items-center mb-24 desktop:pl-2 tablet:pl-2">
         <div className="desktop:w-[55%]">
           <div className=" flex-1 text-display-3 mobile:text-md small-mobile:text-md font-medium desktop:text-start text-center">
             <h1 className="text-textPrimary ">Spotlight</h1>
@@ -607,7 +607,7 @@ const OurCustomers = () => {
           </div>
         </div>
 
-        <div className="min-w-[350px] flex flex-col desktop:gap-24 gap-10 bg-onBackground rounded-xl p-8 desktop:mr-10 mx-auto">
+        <div className="min-w-[320px] flex flex-col desktop:gap-24 gap-10 bg-onBackground rounded-xl p-8 desktop:mr-10 mx-auto">
           <div>
             <img
               className="h-[32px] w-auto mb-12"
@@ -687,8 +687,8 @@ const OurCustomers = () => {
         </p>
       </div> */}
 
-      <div className="tablet:max-w-[500px] tablet:mx-auto mb-48">
-        <p className="text-md mobile:text-sm small-mobile:text-sm text-textPrimary font-medium mb-16">
+      <div className="tablet:mx-auto desktop:mb-48 tablet:mb-48 mb-32">
+        <p className="tablet:max-w-[500px] tablet:mx-auto text-md mobile:text-sm small-mobile:text-sm text-textPrimary font-medium desktop:mb-16 tablet:mb-16 mb-12 tablet:text-center mobile:text-center small-mobile:text-center">
           Why people love to love us.
         </p>
 
@@ -733,7 +733,7 @@ const OurCustomers = () => {
         <TestimonalRotator />
       </div>
 
-      <div className="relative tablet:w-[80%] mx-auto h-full bg-onBackground tablet:mx-12">
+      {/* <div className="relative tablet:w-[80%] mx-auto h-full bg-onBackground tablet:mx-12">
         <div
           // style={{
           //   backgroundImage:
@@ -743,13 +743,7 @@ const OurCustomers = () => {
 
           className="my-24 desktop:w-[1120px] w-full desktop:h-[573px] tablet:h-[573px] mobile:h-[450px] small-mobile:h-[450px] overflow-hidden rounded-2xl border border-slate-700 shadow-surfaceAccent shadow-2xl flex flex-col justify-center"
         >
-          {/* <div
-            className="w-[1120px] h-full absolute inset-0 opacity-75 rounded-2xl"
-            style={{
-              background:
-                "linear-gradient(to right, black, rgba(0, 0, 0, 0.5))",
-            }}
-          ></div> */}
+ 
           <div className="w-full mx-auto desktop:px-48">
             <h1 className="text-xl mobile:text-md small-mobile:text-md text-center text-textPrimary font-medium">
               Learn how people like you are leveraging Arhasi to develop AI
@@ -771,7 +765,7 @@ const OurCustomers = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="">
         <Footer />

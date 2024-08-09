@@ -62,7 +62,7 @@ body {
 
 .horizontal-scroll-container {
   display: flex;
-  gap: 16px;
+  gap: 20px;
   overflow: hidden;
 }
 
@@ -75,12 +75,26 @@ body {
 }
 
 .scroll-item {
-  /* width: 385px;   */
+  width: 385px;
   max-width: 500px;
   border: 1px solid var(--surfaceAccent); /* Example border color */
   border-radius: 1rem; /* Example border radius */
   padding: 20px; /* Example padding */
   background-color: var(--onBackground); /* Example background color */
+}
+
+@media (max-width: 801px) {
+  .horizontal-scroll-container {
+    overflow: auto;
+    justify-content: center;
+  }
+  .horizontal-scroll {
+    animation: none;
+    flex-direction: column;
+  }
+  .scroll-item {
+    width: 100%;
+  }
 }
 
 /* Add this to your CSS file */
