@@ -392,7 +392,7 @@ const OurCustomers = () => {
   };
 
   return (
-    <div className="text-white relative top-[62px] w-full h-full px-[112px] ">
+    <div className="text-white relative top-[62px] w-full h-full desktop:px-[112px] tablet:px-[48px] mobile:px-[24px] small-mobile:px-[12px]">
       <div className="relative w-full h-full mx-auto mb-[90px]">
         <div
           style={{
@@ -400,7 +400,7 @@ const OurCustomers = () => {
               "url(https://framerusercontent.com/images/Pj07C9ziBYGTiVpxHPtHvd8fVg.jpg?scale-down-to=1024)",
             backgroundPosition: "center",
           }}
-          className="mt-12 w-[1120px] h-[573px] overflow-hidden rounded-2xl border border-slate-700 shadow-surfaceAccent shadow-2xl flex flex-col justify-center"
+          className="mt-12 desktop:w-[1120px] w-full desktop:h-[573px] tablet:h-[573px] mobile:h-[450px] small-mobile:h-[450px] overflow-hidden rounded-2xl border border-slate-700 shadow-surfaceAccent shadow-2xl flex flex-col justify-center"
         >
           {/* <img
             className="w-full h-full object-cover"
@@ -408,30 +408,36 @@ const OurCustomers = () => {
             src="https://framerusercontent.com/images/Pj07C9ziBYGTiVpxHPtHvd8fVg.jpg?scale-down-to=1024"
           /> */}
           <div
-            className="w-[1120px] h-full absolute inset-0 opacity-75 rounded-2xl"
+            className="desktop:w-[1120px] w-full h-full absolute inset-0 opacity-75 rounded-2xl"
             style={{
               background:
                 "linear-gradient(to right, black, rgba(0, 0, 0, 0.5))",
             }}
           ></div>
-          <div className="absolute w-[33%] mx-24">
-            <h1 className="text-xl text-textPrimary font-medium">
+          <div className="absolute desktop:w-[33%] max-w-[362px] desktop:mx-24 tablet:mx-24 mobile:mx-10 small-mobile:mx-6">
+            <h1 className="text-xl mobile:text-md small-mobile:text-md text-textPrimary font-medium">
               How to deploy AI in record time
             </h1>
-            <div className="w-full flex justify-between my-8">
+            <div className="w-full flex gap-12 my-8">
               <div className="flex flex-col">
-                <h1 className="text-lg font-medium text-textAccent">4 Week</h1>
-                <p className="text-p-sm text-textPrimary">
+                <h1 className="text-lg mobile:text-md small-mobile:text-32 font-medium text-textAccent">
+                  4 Week
+                </h1>
+                <p className="text-p-sm mobile:text-p-xs small-mobile:text-p-xs text-textPrimary">
                   custom AI deployment
                 </p>
               </div>
               <div className="flex flex-col">
-                <h1 className="text-lg font-medium text-textAccent">4 Week</h1>
-                <p className="text-p-sm text-textPrimary">time to value</p>
+                <h1 className="text-lg mobile:text-md small-mobile:text-32 font-medium text-textAccent">
+                  4 Week
+                </h1>
+                <p className="text-p-sm mobile:text-p-xs small-mobile:text-p-xs text-textPrimary">
+                  time to value
+                </p>
               </div>
             </div>
             <div className="my-8">
-              <p className="text-p-md text-textSecondary">
+              <p className="text-p-md mobile:text-p-sm small-mobile:text-p-sm text-textSecondary">
                 With a{" "}
                 <span className="text-center px-1">
                   <img
@@ -458,17 +464,17 @@ const OurCustomers = () => {
         <BlogpostCards />
       </div> */}
 
-      <div className="w-full flex justify-end mb-16 pr-14">
-        <div className="w-[38%] text-display-3 font-medium text-end">
+      <div className="w-full tablet:max-w-[500px] mobile:max-w-full small-mobile:max-w-full tablet:mx-auto mobile:mx-auto flex desktop:justify-end tablet:justify-end justify-center mb-16 desktop:pr-14">
+        <div className="desktop:w-[38%] w-full text-display-3 mobile:text-md small-mobile:text-md font-medium desktop:text-end tablet:text-end text-center">
           <h1 className="text-textPrimary ">Industry Suites</h1>
           <p className="text-textTertiary">just got sweet</p>
         </div>
       </div>
 
-      <ul className="w-full flex items-center justify-evenly mb-[90px]">
+      <ul className="w-full tablet:max-w-[500px] mobile:max-w-full small-mobile:max-w-full tablet:mx-auto mobile:mx-auto small-mobile:mx-auto flex desktop:flex-row flex-col gap-12 items-center justify-evenly mb-[90px]">
         {typesOfCustomers.map((customerType) => {
           return (
-            <li className="w-[42%]">
+            <li className="desktop:w-[42%]">
               <div className="w-full h-[255px] rounded-3xl overflow-hidden">
                 <img
                   className="w-full h-full object-cover"
@@ -476,11 +482,11 @@ const OurCustomers = () => {
                   src={customerType.imageUrl}
                 />
               </div>
-              <div className="pt-8">
-                <h1 className="text-sm text-accent font-semibold">
+              <div className="desktop:pt-8 pt-6">
+                <h1 className="text-sm mobile:text-p-lg small-mobile:text-p-md text-accent font-semibold">
                   {customerType.title}
                 </h1>
-                <p className="font-medium text-[#888888] text-p-lg py-6">
+                <p className="mobile:text-p-lg small-mobile:text-p-md font-medium text-[#888888] text-p-lg desktop:py-6 py-3">
                   {customerType.desc}
                 </p>
               </div>
@@ -489,9 +495,9 @@ const OurCustomers = () => {
         })}
       </ul>
 
-      <div className="w-full flex justify-between items-center mb-16 pl-2">
-        <div className=" flex-1 text-display-3 font-medium text-start">
-          <h1 className="text-textPrimary ">Get strategic with</h1>
+      <div className="w-full tablet:max-w-[500px] mobile:max-w-full small-mobile:max-w-full tablet:mx-auto mobile:mx-auto flex desktop:flex-row flex-col justify-between tablet:gap-6 mobile:gap-6 small-mobile:gap-6 items-center mb-16 pl-2">
+        <div className=" flex-1 text-display-3 mobile:text-md small-mobile:text-md font-medium text-start">
+          <h1 className="text-textPrimary">Get strategic with</h1>
           <p className="text-textTertiary">the best of Arhasi</p>
         </div>
 
@@ -500,19 +506,21 @@ const OurCustomers = () => {
         </div>
       </div>
 
-      <div className="mb-24">
-        <ul className="flex flex-wrap gap-4">
+      <div className="tablet:max-w-[700px] mobile:max-w-full small-mobile:max-w-full tablet:mx-auto mobile:mx-auto mb-24">
+        <ul className="flex mx-auto desktop:flex-row tablet:flex-row justify-center flex-col flex-wrap gap-4">
           {bestOfArhasi.map((eachInfo) => {
             return (
-              <li className="w-[23%] flex flex-col gap-6 p-8 my-4 rounded-2xl border border-surfaceAccent bg-onBackground">
+              <li className="desktop:w-[23%] w-full mobile:mx-auto small-mobile:mx-auto tablet:max-w-[260px] flex flex-col gap-6 p-8 rounded-2xl border border-surfaceAccent bg-onBackground">
                 <div className="w-[24px] flex justify-start">
                   {eachInfo.icon}
                 </div>
-                <div className="text-wrap text-p-md text-textSecondary">
-                  {eachInfo.title}
-                </div>
-                <div className="text-p-xs text-textTertiary">
-                  {eachInfo.desc}
+                <div>
+                  <div className="text-wrap text-p-md text-textPrimary mb-2">
+                    {eachInfo.title}
+                  </div>
+                  <div className="text-p-md text-textTertiary">
+                    {eachInfo.desc}
+                  </div>
                 </div>
               </li>
             );
@@ -520,14 +528,14 @@ const OurCustomers = () => {
         </ul>
       </div>
 
-      <div className="w-full flex justify-between items-center mb-24 pl-2">
-        <div className="w-[55%]">
-          <div className=" flex-1 text-display-3 font-medium text-start">
+      <div className="tablet:max-w-[500px] tablet:mx-auto w-full flex desktop:flex-row flex-col justify-between items-center mb-24 pl-2">
+        <div className="desktop:w-[55%]">
+          <div className=" flex-1 text-display-3 mobile:text-md small-mobile:text-md font-medium desktop:text-start text-center">
             <h1 className="text-textPrimary ">Spotlight</h1>
             <p className="text-textTertiary">Testimonal</p>
           </div>
-          <div className="">
-            <p className="text-md text-textPrimary font-medium my-6">
+          <div className="tablet:text-start">
+            <p className="text-md mobile:text-sm small-mobile:text-sm text-textPrimary font-medium my-6">
               Helping LifeWorks employees better help those in need with
               Arhasi's{" "}
               <span className="px-2">
@@ -545,7 +553,7 @@ const OurCustomers = () => {
           </div>
 
           <div>
-            <p className="text-p-xl text-textPrimary font-medium my-6">
+            <p className="text-p-xl mobile:text-sm small-mobile:text-sm text-textPrimary font-medium my-6">
               "Coupling Arhasi’s AI frameworks and tools is the accelerator
               pedal for rapid AI adoption. The LifeWorks AI employee assistant
               offers our employees a superior alternative for policy and
@@ -578,7 +586,7 @@ const OurCustomers = () => {
             </div>
 
             <div className="mb-24">
-              <h1 className="text-md font-medium text-textPrimary">
+              <h1 className="text-md mobile:text-sm small-mobile:text-sm font-medium text-textPrimary">
                 Faster Time to Value with the Power of Partners
               </h1>
 
@@ -599,7 +607,7 @@ const OurCustomers = () => {
           </div>
         </div>
 
-        <div className="min-w-[350px] flex flex-col gap-24 bg-onBackground rounded-xl p-8 mr-10">
+        <div className="min-w-[350px] flex flex-col desktop:gap-24 gap-10 bg-onBackground rounded-xl p-8 desktop:mr-10 mx-auto">
           <div>
             <img
               className="h-[32px] w-auto mb-12"
@@ -679,8 +687,8 @@ const OurCustomers = () => {
         </p>
       </div> */}
 
-      <div className="mb-48">
-        <p className="text-md text-textPrimary font-medium mb-16">
+      <div className="tablet:max-w-[500px] tablet:mx-auto mb-48">
+        <p className="text-md mobile:text-sm small-mobile:text-sm text-textPrimary font-medium mb-16">
           Why people love to love us.
         </p>
 
@@ -725,7 +733,7 @@ const OurCustomers = () => {
         <TestimonalRotator />
       </div>
 
-      <div className="relative w-full h-full mx-auto bg-onBackground">
+      <div className="relative tablet:w-[80%] mx-auto h-full bg-onBackground tablet:mx-12">
         <div
           // style={{
           //   backgroundImage:
@@ -733,7 +741,7 @@ const OurCustomers = () => {
           //   backgroundPosition: "center",
           // }}
 
-          className="my-24 w-[1120px] h-[573px] overflow-hidden rounded-2xl border border-slate-700 shadow-surfaceAccent shadow-2xl flex flex-col justify-center"
+          className="my-24 desktop:w-[1120px] w-full desktop:h-[573px] tablet:h-[573px] mobile:h-[450px] small-mobile:h-[450px] overflow-hidden rounded-2xl border border-slate-700 shadow-surfaceAccent shadow-2xl flex flex-col justify-center"
         >
           {/* <div
             className="w-[1120px] h-full absolute inset-0 opacity-75 rounded-2xl"
@@ -742,13 +750,13 @@ const OurCustomers = () => {
                 "linear-gradient(to right, black, rgba(0, 0, 0, 0.5))",
             }}
           ></div> */}
-          <div className="w-full mx-auto px-48">
-            <h1 className="text-xl text-center text-textPrimary font-medium">
+          <div className="w-full mx-auto desktop:px-48">
+            <h1 className="text-xl mobile:text-md small-mobile:text-md text-center text-textPrimary font-medium">
               Learn how people like you are leveraging Arhasi to develop AI
               literacy and prowess.
             </h1>
             <div className="my-8">
-              <p className="text-p-lg text-center text-textTertiary mx-12">
+              <p className="text-p-lg mobile:text-p-md small-mobile:text-p-md text-center text-textTertiary mx-12">
                 Every Monday, you'll get a short article, offerings update, or
                 fresh perspective that will help you achieve more with Arhasi.
               </p>
