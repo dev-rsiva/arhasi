@@ -124,17 +124,18 @@ const Services = () => {
       </div>
 
       <div className="w-full h-full flex flex-col gap-[20px] desktop:mb-52 tablet:mb-44 mb-24 mobile:mt-24">
-        <div className="flex flex-wrap gap-[20px] mobile:mx-auto">
+        <div className="flex flex-wrap gap-[20px] mobile:mx-auto mobile:max-w-[380px]">
           <div className="desktop:h-[350px] tablet:h-[350px] desktop:min-w-[30%] desktop:flex-1 tablet:w-full tablet:min-w-[45%] tablet:flex-1 bg-onBackground rounded-2xl flex flex-col justify-between items-center border border-surfaceAccent overflow-hidden mobile:mx-auto">
             <h1 className="text-p-lg font-medium text-textPrimary desktop:pl-8 tablet:pl-8 desktop:pr-16 tablet:pr-16 px-8 pt-[28px] pb-4 leading-[24px]">
               AI Integrity Assurance with Model Evaluation Testing
             </h1>
 
-            <div className="w-full h-full">
+            <div className="w-full h-full overflow-hidden">
               <img
-                className="w-full h-full object-cover"
+                className="w-[90%] h-full mx-auto object-cover object-bottom tablet:object-contain"
                 alt=""
-                src="https://framerusercontent.com/images/DxkgHWaibaSdj0R0LQYDVswP3w.png?scale-down-to=512"
+                // src="https://framerusercontent.com/images/DxkgHWaibaSdj0R0LQYDVswP3w.png?scale-down-to=512"
+                src="./Group_1000004309.png"
               />
             </div>
           </div>
@@ -144,25 +145,27 @@ const Services = () => {
               AI Maturity Assessment and AI Risk Mitigation
             </h1>
 
-            <div className="w-full h-full">
+            <div className="w-full tablet:w-[75%] h-full">
               <img
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover p-2 tablet:object-contain"
                 alt=""
-                src="https://framerusercontent.com/images/GYbFniO2U078eY9M02XE2K3dWw.svg"
+                // src="https://framerusercontent.com/images/GYbFniO2U078eY9M02XE2K3dWw.svg"
+                src="./Frame_1000004494.png"
               />
             </div>
           </div>
 
-          <div className="desktop:h-[350px] tablet:h-[505px] desktop:min-w-[30%] desktop:flex-1 tablet:w-full bg-onBackground rounded-2xl flex flex-col justify-between items-center border border-surfaceAccent overflow-hidden mobile:mx-auto">
+          <div className="desktop:h-[350px] tablet:h-[405px] desktop:min-w-[30%] desktop:flex-1 tablet:w-full bg-onBackground rounded-2xl flex flex-col justify-between items-center border border-surfaceAccent overflow-hidden mobile:mx-auto">
             <h1 className="text-p-lg font-medium text-textPrimary desktop:pl-8 tablet:pl-8 desktop:pr-16 tablet:pr-16 px-8 pt-[28px] pb-4 leading-[24px]">
               Strategic Roadmap for Privacy & Integrity
             </h1>
 
-            <div className="w-full h-full">
+            <div className="w-[100%] tablet:w-[70%] h-full">
               <img
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain px-2 py-10"
                 alt=""
-                src="https://framerusercontent.com/images/flxVbzuOP1KvtuA2eMMuHoi3Joc.jpg"
+                // src="https://framerusercontent.com/images/flxVbzuOP1KvtuA2eMMuHoi3Joc.jpg"
+                src="./Frame_1000004493.png"
               />
             </div>
           </div>
@@ -194,22 +197,24 @@ const Services = () => {
 
             <div className="w-full h-full">
               <img
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain object-bottom"
                 alt=""
-                src="https://framerusercontent.com/images/Kq2S2G1XvWr8YTMtf8ch9u09GjY.jpg"
+                // src="https://framerusercontent.com/images/Kq2S2G1XvWr8YTMtf8ch9u09GjY.jpg"
+                src="./Framework_arhasi.png"
               />
             </div>
           </div>
-          <div className="desktop:h-[350px] tablet:h-[505px] desktop:min-w-[30%] desktop:flex-1 tablet:w-full  bg-onBackground rounded-2xl flex flex-col gap-3 justify-between items-center border border-surfaceAccent overflow-hidden mobile:mx-auto">
+          <div className="desktop:h-[350px] tablet:h-[405px] desktop:min-w-[30%] desktop:flex-1 tablet:w-full  bg-onBackground rounded-2xl flex flex-col gap-3 justify-between items-center border border-surfaceAccent overflow-hidden mobile:mx-auto">
             <h1 className="text-p-lg font-medium text-textPrimary px-8 pt-[28px] pb-4 leading-[24px]">
               Prototyping Compliant Solutions
             </h1>
 
-            <div className="w-full h-full">
+            <div className="desktop:w-[60%] tablet:w-[30%] w-[70%] h-full">
               <img
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
                 alt=""
-                src="https://framerusercontent.com/images/flxVbzuOP1KvtuA2eMMuHoi3Joc.jpg"
+                // src="https://framerusercontent.com/images/flxVbzuOP1KvtuA2eMMuHoi3Joc.jpg"
+                src="./Group_1000004313.png"
               />
             </div>
           </div>
@@ -219,11 +224,12 @@ const Services = () => {
               Regulated Outcomes and Expectations
             </h1>
 
-            <div className="w-full h-full">
+            <div className="w-full h-full overflow-hidden">
               <img
-                className="w-full h-full object-cover"
+                className="w-[85%] h-full mx-auto object-cover object-bottom tablet:object-contain"
                 alt=""
-                src="https://framerusercontent.com/images/GYbFniO2U078eY9M02XE2K3dWw.svg"
+                // src="https://framerusercontent.com/images/GYbFniO2U078eY9M02XE2K3dWw.svg"
+                src="./Group_1000004310.png"
               />
             </div>
           </div>
@@ -233,11 +239,12 @@ const Services = () => {
               Post-Delivery AI Monitoring & Appraisals
             </h1>
 
-            <div className="w-full h-full">
+            <div className="w-full h-full overflow-hidden">
               <img
-                className="w-full h-full object-cover"
+                className="w-[85%] h-full mx-auto object-cover object-bottom tablet:object-contain"
                 alt=""
-                src="https://framerusercontent.com/images/xrPQKbM5NKX9SpUbER35DWIl5jY.png?scale-down-to=512"
+                // src="https://framerusercontent.com/images/xrPQKbM5NKX9SpUbER35DWIl5jY.png?scale-down-to=512"
+                src="./Group_1000004310_0001.png"
               />
             </div>
           </div>

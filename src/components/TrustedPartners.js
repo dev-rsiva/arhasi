@@ -1,9 +1,13 @@
 import React from "react";
 
-const TrustedPartners = () => {
+const TrustedPartners = ({ from }) => {
   return (
     <div className="flex desktop:flex-row flex-col justify-center items-center desktop:gap-24 tablet:gap-12 gap-8 py-8">
-      <div className="flex flex-col desktop:text-left tablet:text-left text-center">
+      <div
+        className={`${
+          from === "productsPage" ? "hidden" : "flex"
+        } flex-col desktop:text-left tablet:text-left text-center`}
+      >
         <h1 className="text-p-md text-textPrimary">Trusted by our partners,</h1>
         <p className="desktop:text-nowrap text-p-md text-textSecondary">
           Empowering the top companies in reliable & secure AI

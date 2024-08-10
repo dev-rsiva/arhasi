@@ -19,9 +19,9 @@ const ContactUs = () => {
 
   return (
     <div className="top-[62px] w-full h-full">
-      <div className="px-[112px]">
-        <div className="w-[57%] mx-auto mt-36 flex flex-col gap-4">
-          <h1 className="text-2xl text-center font-medium text-textPrimary">
+      <div className="desktop:px-[112px] tablet:px-[48px] px-[24px]">
+        <div className="desktop:w-[57%] mx-auto mt-36 flex flex-col gap-4">
+          <h1 className="desktop:text-2xl tablet:text-[64px] text-[40px] desktop:leading-[80px] tablet:leading-[68px] leading-[48px] text-center font-medium text-textPrimary">
             How can we help?
           </h1>
 
@@ -31,8 +31,8 @@ const ContactUs = () => {
           </p>
         </div>
 
-        <div className="flex justify-center gap-24 my-24">
-          <div className="w-[64%] bg-onBackground border border-surfaceAccent rounded-2xl gap-12 flex flex-col p-12">
+        <div className="flex desktop:flex-row flex-col  justify-center items-center gap-24 my-24">
+          <div className="desktop:w-[64%] tablet:w-[80%] w-full bg-onBackground border border-surfaceAccent rounded-2xl desktop:gap-12 gap-8 flex flex-col desktop:p-12 tablet:p-12 p-6">
             <h1 className="text-xs font-medium">General inqueries</h1>
             <form onSubmit={handleFormSubmit} className="h-full flex flex-col">
               <div className="flex flex-col w-full bg-[#000D0F]">
@@ -66,8 +66,8 @@ const ContactUs = () => {
               </button>
             </form>
 
-            <div className="flex items-center gap-1">
-              <div className="w-[16px] h-[16px]">
+            <div className="flex items-center mobile:items-baseline small-mobile:items-baseline gap-1">
+              <div className="w-[16px] h-[16px] text-wrap mobile:pt-1 small-mobile:pt-1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   focusable="false"
@@ -81,15 +81,16 @@ const ContactUs = () => {
                 </svg>
               </div>
 
-              <span className="text-p-md text-textSecondary">
-                By pressing "Submit" you agree to our
-              </span>
-
-              <p className="text-p-md text-textAccent">Privacy Policy</p>
+              <div className="text-p-md text-textSecondary">
+                <span>By pressing "Submit" you agree to our</span>{" "}
+                <span className="text-p-md text-textAccent">
+                  Privacy Policy
+                </span>
+              </div>
             </div>
           </div>
 
-          <div className="flex flex-col gap-16 my-auto w-[20%]">
+          <div className="flex desktop:flex-col mobile:flex-col small-mobile:flex-col flex-col gap-16 justify-center my-auto desktop:w-[20%]">
             {[
               {
                 title: "Email support",
@@ -137,7 +138,7 @@ const ContactUs = () => {
         >
           <div className="absolute left-0 top-0 w-full h-full bg-gradient-to-r from-background to-background opacity-40" />
 
-          <div className="absolute left-0 top-0 w-[40%] h-full  flex flex-col gap-12 ml-20 justify-center">
+          <div className="absolute left-0 top-0 desktop:w-[40%] w-full text-center h-full px-3 flex flex-col gap-12 desktop:ml-20 justify-center">
             <p className="text-sm font-medium text-textPrimary">
               «As someone who believes in both speed to marketing and design
               quality, Infinite helped us launch in two days a website that gets

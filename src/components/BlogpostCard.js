@@ -42,7 +42,8 @@ const BlogpostCard = ({ blogpost, index }) => {
         className={`relative w-auto h-[262px] ${
           blogpost.blogTitle ===
           "Transform ITSM with an AI Integrity Assurance Chatbot"
-            ? "py-6"
+            ? // ? "6px"
+              ""
             : ""
         } bg-white flex justify-center items-center`}
         onMouseEnter={handleMouseEnter}
@@ -54,7 +55,8 @@ const BlogpostCard = ({ blogpost, index }) => {
           src={blogpost.video}
           loop
           playsInline
-          className="cursor-auto w-auto h-full rounded-none object-fit bg-transparent object-center"
+          // className="cursor-auto w-auto h-full rounded-none object-fit bg-transparent object-center"
+          className="cursor-auto w-full h-full rounded-none object-fit bg-transparent object-center"
           onError={handleVideoError}
           controls // Add controls for debugging
         >
