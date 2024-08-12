@@ -30,9 +30,8 @@ const HomePage = () => {
         </div>
         <div className="relative left-[50%] top-[50%] translate-x-[-50%] translate-y-[-40%] z-10 flex flex-col items-center justify-center w-full h-full px-36 tablet:px-20 mobile:px-8 small-mobile:px-4 text-center">
           <h1 className="text-textPrimary text-[60px] tablet:text-[60px] mobile:text-[48px] small-mobile:text-[36px] font-medium text-center my-2">
-            Welcome to Arhasi,
-            <br /> Your all-in-one Protected <br />
-            AI Control Center.
+            From Concept to Secure AI: <br /> 4 Weeks to Operational MVP with
+            Material Impact
           </h1>
           {/* Needed Later on */}
           {/* <p className="text-white text-md tablet:text-sm mobile:text-xs small-mobile:text-xs my-1">

@@ -420,17 +420,17 @@ const OurCustomers = () => {
             </h1>
             <div className="w-full flex gap-12 my-8">
               <div className="flex flex-col">
-                <h1 className="text-lg mobile:text-md small-mobile:text-32 font-medium text-textAccent">
+                <p className="text-lg mobile:text-md small-mobile:text-32 font-medium text-textAccent">
                   4 Week
-                </h1>
+                </p>
                 <p className="text-p-sm mobile:text-p-xs small-mobile:text-p-xs text-textPrimary">
                   custom AI deployment
                 </p>
               </div>
               <div className="flex flex-col">
-                <h1 className="text-lg mobile:text-md small-mobile:text-32 font-medium text-textAccent">
+                <p className="text-lg mobile:text-md small-mobile:text-32 font-medium text-textAccent">
                   4 Week
-                </h1>
+                </p>
                 <p className="text-p-sm mobile:text-p-xs small-mobile:text-p-xs text-textPrimary">
                   time to value
                 </p>
@@ -465,10 +465,10 @@ const OurCustomers = () => {
       </div> */}
 
       <div className="w-full tablet:max-w-[500px] mobile:max-w-full small-mobile:max-w-full tablet:mx-auto mobile:mx-auto flex desktop:justify-end tablet:justify-end justify-center mb-16 desktop:pr-14">
-        <div className="desktop:w-[38%] w-full text-display-3 mobile:text-md small-mobile:text-md font-medium desktop:text-end tablet:text-end text-center">
-          <h1 className="text-textPrimary ">Industry Suites</h1>
+        <h2 className="desktop:w-[38%] w-full text-display-3 mobile:text-md small-mobile:text-md font-medium desktop:text-end tablet:text-end text-center">
+          <p className="text-textPrimary ">Industry Suites</p>
           <p className="text-textTertiary">just got sweet</p>
-        </div>
+        </h2>
       </div>
 
       <ul className="w-full tablet:max-w-[500px] mobile:max-w-full small-mobile:max-w-full tablet:mx-auto mobile:mx-auto small-mobile:mx-auto flex desktop:flex-row flex-col gap-12 items-center justify-evenly mb-[90px]">
@@ -483,9 +483,9 @@ const OurCustomers = () => {
                 />
               </div>
               <div className="desktop:pt-8 pt-6">
-                <h1 className="text-sm mobile:text-p-lg small-mobile:text-p-md text-accent font-semibold">
+                <h3 className="text-sm mobile:text-p-lg small-mobile:text-p-md text-accent font-semibold">
                   {customerType.title}
-                </h1>
+                </h3>
                 <p className="mobile:text-p-lg small-mobile:text-p-md font-medium text-[#888888] text-p-lg desktop:py-6 py-3">
                   {customerType.desc}
                 </p>
@@ -496,10 +496,10 @@ const OurCustomers = () => {
       </ul>
 
       <div className="w-full tablet:max-w-[500px] mobile:max-w-full small-mobile:max-w-full tablet:mx-auto mobile:mx-auto flex desktop:flex-row flex-col justify-between tablet:gap-6 mobile:gap-6 small-mobile:gap-6 items-center mb-16 desktop:pl-2 tablet:pl-2">
-        <div className=" flex-1 text-display-3 mobile:text-md small-mobile:text-md font-medium text-start">
+        <h1 className=" flex-1 text-display-3 mobile:text-md small-mobile:text-md font-medium text-start">
           <h1 className="text-textPrimary">Get strategic with</h1>
-          <p className="text-textTertiary">the best of Arhasi</p>
-        </div>
+          <h1 className="text-textTertiary">the best of Arhasi</h1>
+        </h1>
 
         <div onClick={() => handleNavigation("/services")}>
           <ButtonComp buttonName="Learn More" />
@@ -515,12 +515,10 @@ const OurCustomers = () => {
                   {eachInfo.icon}
                 </div>
                 <div>
-                  <div className="text-wrap text-p-md text-textPrimary mb-2">
+                  <h3 className="text-wrap text-p-md text-textPrimary mb-2">
                     {eachInfo.title}
-                  </div>
-                  <div className="text-p-md text-textTertiary">
-                    {eachInfo.desc}
-                  </div>
+                  </h3>
+                  <p className="text-p-md text-textTertiary">{eachInfo.desc}</p>
                 </div>
               </li>
             );
@@ -530,10 +528,10 @@ const OurCustomers = () => {
 
       <div className="tablet:max-w-[500px] tablet:mx-auto w-full flex desktop:flex-row flex-col justify-between items-center mb-24 desktop:pl-2 tablet:pl-2">
         <div className="desktop:w-[55%]">
-          <div className=" flex-1 text-display-3 mobile:text-md small-mobile:text-md font-medium desktop:text-start text-center">
-            <h1 className="text-textPrimary ">Spotlight</h1>
-            <p className="text-textTertiary">Testimonal</p>
-          </div>
+          <h2 className=" flex-1 text-display-3 mobile:text-md small-mobile:text-md font-medium desktop:text-start text-center">
+            <h2 className="text-textPrimary ">Spotlight</h2>
+            <h2 className="text-textTertiary">Testimonal</h2>
+          </h2>
           <div className="tablet:text-start">
             <p className="text-md mobile:text-sm small-mobile:text-sm text-textPrimary font-medium my-6">
               Helping LifeWorks employees better help those in need with
@@ -688,9 +686,9 @@ const OurCustomers = () => {
       </div> */}
 
       <div className="tablet:mx-auto desktop:mb-48 tablet:mb-48 mb-32">
-        <p className="tablet:max-w-[500px] tablet:mx-auto text-md mobile:text-sm small-mobile:text-sm text-textPrimary font-medium desktop:mb-16 tablet:mb-16 mb-12 tablet:text-center mobile:text-center small-mobile:text-center">
+        <h2 className="tablet:max-w-[500px] tablet:mx-auto text-md mobile:text-sm small-mobile:text-sm text-textPrimary font-medium desktop:mb-16 tablet:mb-16 mb-12 tablet:text-center mobile:text-center small-mobile:text-center">
           Why people love to love us.
-        </p>
+        </h2>
 
         {/* <ul className="horizontal-scroll flex gap-6 w-full py-8">
           {testimonalsInfo.map((testimonal) => {

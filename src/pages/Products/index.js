@@ -411,7 +411,7 @@ const ProductsPage = () => {
               Productivity with AI
             </p>
 
-            <div className="flex gap-4 justify-center">
+            <div className="flex gap-4 desktop:justify-start justify-center">
               <button className="text-[#FFFFFF]  text-p-sm bg-surfaceAccent hover:bg-onBackground border border-surfaceAccent hover:border hover:border-surfaceAccent font-bold rounded-lg px-4 py-2 my-3">
                 Get started
               </button>

@@ -124,7 +124,7 @@ const ContactUs = () => {
         </div>
       </div>
 
-      <div className="w-full mt-36 mb-24">
+      {/* <div className="w-full mt-36 mb-24">
         <div
           style={{
             width: "100%",
@@ -147,7 +147,7 @@ const ContactUs = () => {
             <p className="text-p-md"> Matt Garlim ― Founder & CTO at Startup</p>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="px-[112px]">
         <Footer />

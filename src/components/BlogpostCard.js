@@ -106,9 +106,9 @@ const BlogpostCard = ({ blogpost, index }) => {
               {blogpost.about}
             </span>
           </div>
-          <h1 className="my-4 text-p-xl text-textPrimary font-medium">
+          <h3 className="my-4 text-p-xl text-textPrimary font-medium">
             {blogpost.blogTitle}
-          </h1>
+          </h3>
           <p className="my-3 text-p-xs text-textTertiary mt-10">
             {blogpost.companyInfo}
           </p>

@@ -106,11 +106,11 @@ const AboutUs = () => {
       name: "Hari Jayaraman",
       role: "MLOps Advisor",
     },
-    {
-      coWorkerImg: "./Yujun_Liang.avif",
-      name: "Yujun Liang",
-      role: "Google Toastmaster",
-    },
+    // {
+    //   coWorkerImg: "./Yujun_Liang.avif",
+    //   name: "Yujun Liang",
+    //   role: "Google Toastmaster",
+    // },
   ];
 
   const nameRef = useRef();
@@ -139,7 +139,7 @@ const AboutUs = () => {
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
         }}
-        className="relative w-full top-0 h-[100vh] flex justify-center items-end"
+        className="relative w-full top-0 desktop:h-[50vh] h-[35vh] flex justify-center items-end"
       >
         <div className="absolute inset-x-0 bottom-0 h-[50vh] bg-gradient-to-b from-transparent to-background to-99%"></div>
         <div className="absolute bottom-5 flex flex-col gap-4 justify-center items-center">
@@ -185,9 +185,9 @@ const AboutUs = () => {
           </div>
 
           <div className="desktop:absolute tablet:absolute desktop:w-[55%] tablet:w-[70%] mx-auto desktop:bottom-0 tablet:top-[80%] desktop:right-0 right-[50%] desktop:translate-x-[0%] tablet:translate-x-[50%] bg-background text-textPrimary desktop:pt-4 desktop:pb-[85px] desktop:pl-6 tablet:p-3 desktop:rounded-none tablet:rounded-lg rounded-md overflow-hidden tablet:text-center mobile:text-left small-mobile:text-left">
-            <h1 className="text-display-3 text-textPrimary font-medium tablet:mb-6 mobile:mb-6 small-mobile:mb-6 text-center">
+            <p className="text-display-3 text-textPrimary font-medium tablet:mb-6 mobile:mb-6 small-mobile:mb-6 desktop:text-left text-center">
               At Arhasi,
-            </h1>
+            </p>
             <span className="text-p-lg text-textSecondary ">
               We're on a mission to expedite the adoption of AI Solutions
               without compromising on Security, Governance, and Compliance.
@@ -222,9 +222,9 @@ const AboutUs = () => {
 
         <div className="tablet:w-[80%] tablet:mx-auto flex desktop:flex-row flex-col justify-between items-end mb-24">
           <div className="text-p-lg mobile:text-p-md small-mobile:text-p-md desktop:w-[45%] flex flex-col gap-4">
-            <h1 className="text-display-3 mobile:text-md small-mobile:text-md text-textPrimary font-medium mobile:py-3 small-mobile:py-3">
+            <h2 className="text-display-3 mobile:text-md small-mobile:text-md text-textPrimary font-medium mobile:py-3 small-mobile:py-3">
               Since 2023
-            </h1>
+            </h2>
 
             <p className="text-textSecondary">
               We began this journey in early 2023 when GenAI was synonymous with
@@ -283,10 +283,10 @@ const AboutUs = () => {
               OUR MODUS OPERANDI
             </p>
 
-            <h1 className="text-display-3 mobile:text-md small-mobile:text-md text-textPrimary font-medium">
+            <h2 className="text-display-3 mobile:text-md small-mobile:text-md text-textPrimary font-medium">
               {/* Our investors */}
               AI with Integrity™
-            </h1>
+            </h2>
 
             <p className="text-textTertiary text-p-lg mobile:text-p-md small-mobile:text-p-md text-center">
               {/* Proudly supported by the best in business to change the game */}
@@ -295,7 +295,7 @@ const AboutUs = () => {
           </div>
         </div>
 
-        <div className="tablet:w-[80%] mx-auto text-p-xl mobile:text-p-lg small-mobile:text-p-lg text-textPrimary desktop:px-20 my-32">
+        <p className="tablet:w-[80%] mx-auto text-p-xl mobile:text-p-lg small-mobile:text-p-lg text-textPrimary desktop:px-20 my-32">
           Arhasi has a premier marketplace and AI portal where enterprise
           clients can gain access to everything they need to accelerate GenAI
           adoption in their organizations. With standalone products, such as
@@ -306,7 +306,7 @@ const AboutUs = () => {
           organizations; with a solution to fit any need. Coupled with our
           professional services, clients can create customized, proprietary AI
           accelerators out of our solutions.
-        </div>
+        </p>
 
         {/* <div className="w-full h-full flex justify-center items-center mb-28">
           <div
@@ -499,9 +499,9 @@ const AboutUs = () => {
             OUR TEAM
           </p>
 
-          <h1 className="text-display-3 mobile:text-md small-mobile:text-md text-textPrimary font-medium">
-            Small but fearless
-          </h1>
+          <h2 className="text-display-3 mobile:text-md small-mobile:text-md text-textPrimary font-medium">
+            Growing but fearless
+          </h2>
 
           <p className="text-textTertiary text-p-lg mobile:text-p-md small-mobile:text-p-md text-center">
             We are challinging the status quo every day with a small team of
@@ -511,7 +511,7 @@ const AboutUs = () => {
         </div>
 
         <div className="tablet:w-[80%] tablet:mx-auto mobile:mx-auto small-mobile:mx-auto">
-          <ul className="tablet:max-w-[500px] mobile:max-w-[362px] small-mobile:max-w-[362px] tablet:mx-auto mobile:mx-auto small-mobile:mx-auto flex dektop:flex-row tablet:flex-col flex-wrap gap-5 justify-between mobile:items-center desktop:mb-48 tablet:mb-48 mb-32">
+          <ul className="tablet:max-w-[500px] mobile:max-w-[362px] small-mobile:max-w-[362px] tablet:mx-auto mobile:mx-auto small-mobile:mx-auto flex dektop:flex-row tablet:flex-col flex-wrap gap-5 justify-center mobile:items-center desktop:mb-48 tablet:mb-48 mb-32">
             {teamInfo.map((eachInfo) => {
               return (
                 <li className="mobile:mx-auto desktop:w-[32%] w-full p-10 rounded-xl border border-surfaceAccent bg-onBackground flex flex-col gap-6">

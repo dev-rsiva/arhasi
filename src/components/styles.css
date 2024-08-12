@@ -36,13 +36,14 @@ body {
   justify-content: center;
   align-items: center;
   gap: 16px;
-  width: 100%;
+  padding-right: 16px;
+  width: 150%;
   animation: 12s scrollImages infinite linear;
 }
 
 .image-item {
-  width: 118px;
-  height: 32px;
+  width: 100px;
+  height: fit-content;
 }
 
 .image {
@@ -94,6 +95,10 @@ body {
   }
   .scroll-item {
     width: 100%;
+  }
+
+  .image-list {
+    width: 190%;
   }
 }
 
@@ -171,3 +176,18 @@ body {
   width: 300px;
   height: 300px;
 } */
+
+.gradient-border {
+  position: relative;
+  background: linear-gradient(
+    to bottom,
+    #c4779d,
+    rgba(196, 119, 157, 0) 95%,
+    rgba(196, 119, 157, 0) 100%
+  );
+}
+
+.content {
+  background: var(--onBackground);
+  border-radius: 14px;
+}

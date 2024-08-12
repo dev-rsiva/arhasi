@@ -35,13 +35,13 @@ const FeatureTwo = () => {
         <p className="text-p-subheading text-textAccent font-sans font-semibold tracking-wider my-3">
           OUR FEATURES
         </p>
-        <h1 className="desktop:text-display-3 tablet:text-display-3 text-md my-5">
+        <h2 className="desktop:text-display-3 tablet:text-display-3 text-md my-5">
           Accelerate your GenAI Adoption{" "}
           <span className="text-textTertiary">
             with low effort & high impact
           </span>
-        </h1>
-        <h2 className="text-textSecondary desktop:text-p-lg tablet:text-p-lg text-p-md my-5">
+        </h2>
+        <p className="text-textSecondary desktop:text-p-lg tablet:text-p-lg text-p-md my-5">
           <span className="text-center">
             <img
               alt=""
@@ -54,7 +54,7 @@ const FeatureTwo = () => {
           </span>{" "}
           helps organizations derive instant speed, agility and integrity in
           their GenAI Journeys via the following:
-        </h2>
+        </p>
         {/* <ul className="text-p-md text-textPrimary my-5">
           <li className="my-4">
             <svg

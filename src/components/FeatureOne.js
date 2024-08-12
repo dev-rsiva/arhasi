@@ -12,7 +12,7 @@ const FeatureOne = () => {
         <p className="text-p-subheading text-textAccent font-sans font-semibold tracking-wider my-3">
           OUR PLATFORM
         </p>
-        <h1 className="desktop:text-display-3 tablet:text-display-3 text-md my-5">
+        <h2 className="desktop:text-display-3 tablet:text-display-3 text-md my-5">
           Unleash the full power{" "}
           <span className="text-textTertiary">of Arhasi's </span>
           <span>
@@ -23,9 +23,9 @@ const FeatureOne = () => {
             />{" "}
             <sup className="text-sm">™</sup>
           </span>
-        </h1>
+        </h2>
 
-        <h2 className="text-textSecondary desktop:text-p-lg tablet:text-p-lg text-p-md my-5">
+        <p className="text-textSecondary desktop:text-p-lg tablet:text-p-lg text-p-md my-5">
           Our trademarked{" "}
           <span className="px-2">
             <img
@@ -39,7 +39,7 @@ const FeatureOne = () => {
           </span>{" "}
           platform is an end to end platform for faster GenAI Development,
           Validation and Integrity Assurance.
-        </h2>
+        </p>
         <ul className="text-p-md text-textPrimary my-5">
           <li className="my-4">
             <svg

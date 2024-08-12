@@ -45,19 +45,20 @@ const IntegrationsOverview = () => {
       endline: "Arhasi x Azure Cloud Platform",
     },
   ];
+
   return (
     <div className="desktop:mb-48 mb-32">
-      <h1 className="w-full font-medium desktop:text-display-3 tablet:text-display-3 text-center text-md my-12 ">
+      <h2 className="w-full font-medium desktop:text-display-3 tablet:text-display-3 text-center text-md my-12 ">
         Discover our Integrations <br />
         <span className="text-textTertiary">The best in interoperability</span>
-      </h1>
+      </h2>
       <div>
         <ul className="flex flex-wrap desktop:flex-row tablet:flex-row flex-col desktop:gap-5 tablet:gap-4 gap-1">
           {integrationsInfo.map((eachInfo) => {
             return (
               <li
                 // style={{ position: "relative", margin: "3px" }}
-                className="desktop:w-[48%] tablet:w-[48%] flex flex-col gap-6 desktop:p-8 tablet:p-6 p-4 desktop:my-1 tablet:my-1 my-3 rounded-2xl border border-surfaceAccent bg-onBackground"
+                className="desktop:w-[48%] tablet:w-[48%] p-1 desktop:my-1 tablet:my-1 my-3 rounded-2xl border border-surfaceAccent bg-onBackground"
               >
                 {/* <div
                   style={{
@@ -69,22 +70,27 @@ const IntegrationsOverview = () => {
                     border: "2px solid red",
                   }}
                 /> */}
-                <div className="flex justify-between">
-                  <div className="flex items-center gap-3">
-                    <img alt="" src={eachInfo.icon} className="w-[32px]" />
-                    <h1 className="text-p-md font-semibold text-textSecondary">
-                      {eachInfo.title}
-                    </h1>
-                  </div>
-                  {/* <button className="button text-p-xs bg-surfaceAccent font-semibold rounded-full w-[82px] h-[32px]">
+
+                <div className="w-full h-full p-[4px] rounded-2xl gradient-border">
+                  <div className="content desktop:p-8 tablet:p-6 p-4 w-full h-full flex flex-col gap-6">
+                    <div className="flex justify-between ">
+                      <div className="flex items-center gap-3">
+                        <img alt="" src={eachInfo.icon} className="w-[32px]" />
+                        <h2 className="text-p-md font-semibold text-textSecondary">
+                          {eachInfo.title}
+                        </h2>
+                      </div>
+                      {/* <button className="button text-p-xs bg-surfaceAccent font-semibold rounded-full w-[82px] h-[32px]">
                     Connect
                   </button> */}
-                </div>
-                <div className="text-wrap text-p-md text-textSecondary">
-                  {eachInfo.description}
-                </div>
-                <div className="text-p-xs text-textTertiary">
-                  {eachInfo.endline}
+                    </div>
+                    <p className="text-wrap text-p-md text-textSecondary">
+                      {eachInfo.description}
+                    </p>
+                    <p className="text-p-xs text-textTertiary">
+                      {eachInfo.endline}
+                    </p>
+                  </div>
                 </div>
               </li>
             );

@@ -1,6 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import TestimonalRotator from "../../components/TestimonialRotator";
 import Footer from "../../components/Footer";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlay, faPause } from "@fortawesome/free-solid-svg-icons";
 
 const Services = () => {
   const data1 = [
@@ -78,6 +80,41 @@ const Services = () => {
     opacity: 0.5,
     zIndex: 0,
   };
+  const [hasInteracted, setHasInteracted] = useState(false);
+  const [paused, setPaused] = useState(true);
+  console.log(paused);
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current.paused) {
+      setPaused(true);
+    } else {
+      setPaused(false);
+    }
+  }, [paused]);
+
+  useEffect(() => {
+    const handleUserInteraction = () => {
+      if (!hasInteracted && videoRef.current) {
+        console.log("interacted");
+        videoRef.current.play().catch((error) => {
+          console.error("Error trying to play the video:", error);
+        });
+        setHasInteracted(true);
+        setPaused(false);
+      }
+    };
+
+    // Add event listeners for user interactions
+    document.addEventListener("click", handleUserInteraction);
+    document.addEventListener("keydown", handleUserInteraction);
+
+    return () => {
+      // Cleanup event listeners on unmount
+      document.removeEventListener("click", handleUserInteraction);
+      document.removeEventListener("keydown", handleUserInteraction);
+    };
+  }, [hasInteracted]);
 
   // const [videoKey, setVideoKey] = useState(Date.now()); // Initial key based on timestamp
 
@@ -85,6 +122,17 @@ const Services = () => {
   //   // Update key to force remount on refresh or other events
   //   setVideoKey(Date.now());
   // }, []); // Empty dependency array ensures it runs on component mount
+
+  const handleVideoClick = () => {
+    console.log("handle");
+    if (!videoRef.current.paused) {
+      videoRef.current.pause();
+      setPaused(true);
+    } else {
+      videoRef.current.play();
+      setPaused(false);
+    }
+  };
 
   return (
     <div className="relative top-[62px] w-full h-full desktop:px-[112px] tablet:px-[48px] px-[24px]">
@@ -102,8 +150,12 @@ const Services = () => {
             />
           </div>
           <div className="absolute w-full top-[50%] left-[50%] translate-x-[-50%] translate-y-[-130%] text-[90px] text-textPrimary font-medium font-sans leading-[124px] text-center tracking-[-0.045em]">
-            <div className="desktop:w-[55%] tablet:w-[68%] mobile:w-[88%] h-auto absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-70%] rounded-lg overflow-hidden">
+            <div
+              className="desktop:w-[55%] tablet:w-[68%] mobile:w-[88%] h-auto absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-70%] rounded-lg overflow-hidden cursor-pointer"
+              onClick={handleVideoClick}
+            >
               <video
+                ref={videoRef}
                 src="https://res.cloudinary.com/dhj4gimub/video/upload/v1722966691/What_is_Arhasi___AI_with_Integrity_Learn_how_to_operationalize_GenAI_fast_and_meet_regulations._qh4xdf.mp4"
                 // src="./What_is_Arhasi_&_AI_with_Integrity_Learn_how_to_operationalize_GenAI_fast_and_meet_regulations.mp4"
                 // key={videoKey} // Unique key to force reloadloop
@@ -111,8 +163,43 @@ const Services = () => {
                 autoPlay
                 // muted
                 preload="auto"
-                className="cursor-auto w-full h-full rounded-none block object-cover bg-transparent object-center"
+                className="cursor-pointer w-full h-full rounded-none block object-cover bg-transparent object-center"
               />
+              {/* <button
+                // onClick={(e) => {
+                //   e.stopPropagation();
+                //   setPaused(!paused);
+                // }}
+                className="absolute bottom-4 right-4 p-2 bg-white rounded-lg"
+              >
+                {paused ? "Play" : "Pause"}
+              </button> */}
+            </div>
+
+            {!hasInteracted && (
+              <div
+                className={`desktop:w-[55%] tablet:w-[68%] mobile:w-[88%] h-auto absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-70%] rounded-lg overflow-hidden cursor-pointer`}
+              >
+                <img alt="" src="./videoframe_5693.png" />
+              </div>
+            )}
+
+            <div
+              className="absolute top-[0%] left-[50%] translate-x-[-50%] translate-y-[-120%] mobile:translate-y-[-100%] small-mobile:translate-y-[-100%]"
+              onClick={handleVideoClick}
+            >
+              {!paused && (
+                <FontAwesomeIcon
+                  icon={faPause}
+                  className="text-onBackground text-sm cursor-pointer"
+                />
+              )}
+              {paused && (
+                <FontAwesomeIcon
+                  icon={faPlay}
+                  className="text-onBackground text-sm cursor-pointer"
+                />
+              )}
             </div>
           </div>
         </div>
@@ -214,7 +301,7 @@ const Services = () => {
                 className="w-full h-full object-contain"
                 alt=""
                 // src="https://framerusercontent.com/images/flxVbzuOP1KvtuA2eMMuHoi3Joc.jpg"
-                src="./Group_1000004313.png"
+                src="./prototype_image-removebg-preview.png"
               />
             </div>
           </div>
@@ -312,7 +399,7 @@ const Services = () => {
             // style={imageStyle}
             className="w-full desktop:h-[760px] tablet:h-[760px] h-[500px] object-cover relative z-1 desktop:rounded-2xl tablet:rounded-2xl"
             alt=""
-            src="https://framerusercontent.com/images/1UbT0lZWGz3am3fwCnyNJcCfA.webp"
+            src="./arhasi_image.png"
           />
         </div>
       </div>

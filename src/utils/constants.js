@@ -26,32 +26,32 @@ export const testimonalsInfo = [
     logo: "https://framerusercontent.com/images/hQR8FfhSIlkH1EmP18eNWCBaJkU.png?scale-down-to=2048",
   },
 
-  {
-    starIcon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        focusable="false"
-        viewBox="0 0 24 24"
-        style={{
-          userSelect: "none",
-          width: "100%",
-          height: "100%",
-          display: "inline-block",
-          fill: "var(--token-b62c5eed-f783-46cd-9d4c-7561401116f9, rgb(226, 235, 237))",
-          flexShrink: 0,
-        }}
-      >
-        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"></path>
-      </svg>
-    ),
-    review:
-      "As the CEO of an AI platform startup, the rapid development, expertise, and quality of our AI solutions are crucial for a successful launch. Partnering with Cloudbench has surpassed all my expectations. Their meticulous attention to detail, professionalism, and unparalleled expertise have been outstanding. They are a true innovation partner to our firm, and I highly recommend Cloudbench for anyone seeking to develop a generative AI solution for their business.",
-    image:
-      "https://framerusercontent.com/images/o7DapGo0w1SJx44zAnzYEbUhTE.webp",
-    name: "Jeff Maser",
-    role: "Founder & CEO, MarketMind",
-    logo: "https://framerusercontent.com/images/PhrTK7FTH9DrndbOwmFrfiA5E.png",
-  },
+  // {
+  //   starIcon: (
+  //     <svg
+  //       xmlns="http://www.w3.org/2000/svg"
+  //       focusable="false"
+  //       viewBox="0 0 24 24"
+  //       style={{
+  //         userSelect: "none",
+  //         width: "100%",
+  //         height: "100%",
+  //         display: "inline-block",
+  //         fill: "var(--token-b62c5eed-f783-46cd-9d4c-7561401116f9, rgb(226, 235, 237))",
+  //         flexShrink: 0,
+  //       }}
+  //     >
+  //       <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"></path>
+  //     </svg>
+  //   ),
+  //   review:
+  //     "As the CEO of an AI platform startup, the rapid development, expertise, and quality of our AI solutions are crucial for a successful launch. Partnering with Cloudbench has surpassed all my expectations. Their meticulous attention to detail, professionalism, and unparalleled expertise have been outstanding. They are a true innovation partner to our firm, and I highly recommend Cloudbench for anyone seeking to develop a generative AI solution for their business.",
+  //   image:
+  //     "https://framerusercontent.com/images/o7DapGo0w1SJx44zAnzYEbUhTE.webp",
+  //   name: "Jeff Maser",
+  //   role: "Founder & CEO, MarketMind",
+  //   logo: "https://framerusercontent.com/images/PhrTK7FTH9DrndbOwmFrfiA5E.png",
+  // },
 
   {
     starIcon: (

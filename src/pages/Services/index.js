@@ -128,9 +128,9 @@ const AiWithIntegrity = () => {
             <div className="desktop:w-1/2 bg-onBackground rounded-xl flex flex-col justify-between items-center border border-surfaceAccent overflow-hidden">
               <div className="w-full desktop:h-[275px] tablet:h-[275px]">
                 <img
-                  className="w-full h-full object-cover object-bottom"
+                  className="w-full h-full object-cover object-bottom py-6"
                   alt=""
-                  src="https://framerusercontent.com/images/XbZJRi68mKtGJoDlNOu5vYdxU.jpg"
+                  src="./Frame_1000004464.png"
                 />
               </div>
               <div className="w-full flex flex-col gap-2 px-5 pt-3 pb-5 leading-[24px]">
@@ -364,7 +364,7 @@ const AiWithIntegrity = () => {
           </div>
         </div>
 
-        <div className="w-full desktop:my-52 my-24">
+        {/* <div className="w-full desktop:my-52 my-24">
           <div
             style={{
               backgroundImage:
@@ -392,7 +392,7 @@ const AiWithIntegrity = () => {
               <p className="text-p-md"> Anna Scholz - CTO at Saas</p>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* Needed later on */}
         {/* <div className="w-full mb-40">
           <ul className="w-full flex justify-between gap-5">

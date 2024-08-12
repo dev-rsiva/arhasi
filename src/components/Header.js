@@ -86,7 +86,7 @@ const Header = () => {
               className={`absolute desktop:static z-50 desktop:min-h-fit min-h-[60vh] left-0 ${
                 hideNavMenu
                   ? "bottom-[100%] -z-[10]"
-                  : "top-[100%] bg-black bg-opacity-85"
+                  : "top-[100%] bg-onBackground bg-opacity-85"
               } w-full desktop:w-auto flex items-center px-5`}
             >
               <ul
@@ -149,9 +149,9 @@ const Header = () => {
             </div>
           </div>
           <div className="flex items-center gap-6">
-            <button className="button text-textPrimary px-5 py-2 rounded-full">
+            {/* <button className="button text-textPrimary px-5 py-2 rounded-full">
               Login
-            </button>
+            </button> */}
             <div ref={menuBtnRef}>
               <FontAwesomeIcon
                 icon={hideNavMenu ? faBars : faXmark}
