@@ -95,18 +95,18 @@ const ContactUs = () => {
               {
                 title: "Email support",
                 desc: "We usually reply in less than 24 hours",
-                email: "support@arhasi.com",
+                email: "contact@arhasi.com",
               },
-              {
-                title: "Email sales",
-                desc: "We usually reply in less than 24 hours",
-                email: "sales@arhasi.com",
-              },
-              {
-                title: "Email media",
-                desc: "We usually reply in less than 24 hours",
-                email: "media@arhasi.com",
-              },
+              // {
+              //   title: "Email sales",
+              //   desc: "We usually reply in less than 24 hours",
+              //   email: "sales@arhasi.com",
+              // },
+              // {
+              //   title: "Email media",
+              //   desc: "We usually reply in less than 24 hours",
+              //   email: "media@arhasi.com",
+              // },
             ].map((each) => {
               return (
                 <div className="flex-1 flex flex-col gap-4">

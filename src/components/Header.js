@@ -74,7 +74,7 @@ const Header = () => {
                 }}
               >
                 <img
-                  className="w-24 mb-1"
+                  className="w-24 py-1"
                   alt=""
                   src="./Arhasi_new_website_logo-removebg-preview.png"
                 />
