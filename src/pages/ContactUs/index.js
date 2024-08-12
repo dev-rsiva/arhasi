@@ -19,7 +19,7 @@ const ContactUs = () => {
 
   return (
     <div className="top-[62px] w-full h-full">
-      <div className="desktop:px-[112px] tablet:px-[48px] px-[24px]">
+      <div className="desktop:px-[112px] tablet:px-[48px] px-[8px]">
         <div className="desktop:w-[57%] mx-auto mt-36 flex flex-col gap-4">
           <h1 className="desktop:text-2xl tablet:text-[64px] text-[40px] desktop:leading-[80px] tablet:leading-[68px] leading-[48px] text-center font-medium text-textPrimary">
             How can we help?
@@ -31,7 +31,7 @@ const ContactUs = () => {
           </p>
         </div>
 
-        <div className="flex desktop:flex-row flex-col  justify-center items-center gap-24 my-24">
+        <div className="flex desktop:flex-row flex-col  justify-center items-start gap-24 my-24">
           <div className="desktop:w-[64%] tablet:w-[80%] w-full bg-onBackground border border-surfaceAccent rounded-2xl desktop:gap-12 gap-8 flex flex-col desktop:p-12 tablet:p-12 p-6">
             <h1 className="text-xs font-medium">General inqueries</h1>
             <form onSubmit={handleFormSubmit} className="h-full flex flex-col">
@@ -90,7 +90,7 @@ const ContactUs = () => {
             </div>
           </div>
 
-          <div className="flex desktop:flex-col mobile:flex-col small-mobile:flex-col flex-col gap-16 justify-center my-auto desktop:w-[20%]">
+          <div className="flex desktop:flex-col mobile:flex-col small-mobile:flex-col flex-col gap-16 justify-center items-start desktop:w-[20%] my-2">
             {[
               {
                 title: "Email support",
