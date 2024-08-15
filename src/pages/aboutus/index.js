@@ -88,10 +88,10 @@ const AboutUs = () => {
       role: "Board Member",
     },
     {
-      coWorkerImg:
-        "https://framerusercontent.com/images/g3wONdoqZscTqey8XAIT0pwypow.png",
+      // coWorkerImg:
+      //   "https://framerusercontent.com/images/g3wONdoqZscTqey8XAIT0pwypow.png",
       // coWorkerImg: "./g3wONdoqZscTqey8XAIT0pwypow1.png",
-      // coWorkerImg: "./g3wONdoqZscTqey8XAIT0pwypow_001.png",
+      coWorkerImg: "./g3wONdoqZscTqey8XAIT0pwypow_001.png",
       name: "Melody Roth",
       role: "Executive Director",
     },
@@ -516,7 +516,7 @@ const AboutUs = () => {
               return (
                 <li className="mobile:mx-auto desktop:w-[32%] w-full p-10 rounded-xl border border-surfaceAccent bg-onBackground flex flex-col gap-6">
                   <img
-                    className="max-h-[280px] w-fit mx-auto"
+                    className="max-h-[280px] object-contain"
                     alt=""
                     src={eachInfo.coWorkerImg}
                   />
