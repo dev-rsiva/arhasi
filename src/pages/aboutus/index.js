@@ -88,10 +88,10 @@ const AboutUs = () => {
       role: "Board Member",
     },
     {
-      // coWorkerImg:
-      //   "https://framerusercontent.com/images/g3wONdoqZscTqey8XAIT0pwypow.png",
+      coWorkerImg:
+        "https://framerusercontent.com/images/g3wONdoqZscTqey8XAIT0pwypow.png",
       // coWorkerImg: "./g3wONdoqZscTqey8XAIT0pwypow1.png",
-      coWorkerImg: "./g3wONdoqZscTqey8XAIT0pwypow_001.png",
+      // coWorkerImg: "./g3wONdoqZscTqey8XAIT0pwypow_001.png",
       name: "Melody Roth",
       role: "Executive Director",
     },
